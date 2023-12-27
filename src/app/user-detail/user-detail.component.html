@@ -1,0 +1,30 @@
+<div class="container my-4">
+  <div class="d-flex align-items-center mb-3">
+    <button class="btn btn-primary me-2" (click)="goBack()">
+      <i class="fa fa-backward" aria-hidden="true"></i>
+    </button>
+    <h2>User Details</h2>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <div class="d-flex align-items-center">
+        <div class="user-image" style="background-image: url('{{ user.avatar }}');"></div>
+        <div class="ms-3">
+          <h5 class="card-title">{{ user.first_name }} {{ user.last_name }}</h5>
+          <h6 class="card-subtitle mb-2 text-muted">User Details</h6>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="user-details mb-2">
+        <i class="fa fa-user me-2" aria-hidden="true"></i>
+        <span>ID: {{ user.id }}</span>
+      </div>
+      <div class="user-details">
+        <i class="fa fa-envelope me-2" aria-hidden="true"></i>
+        <span>Email: {{ user.email }}</span>
+      </div>
+    </div>
+  </div>
+</div>

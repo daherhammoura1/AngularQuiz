@@ -1,0 +1,43 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<style>
+  
+</style>
+
+<main class="main">
+ 
+  <div class="container my-4">
+    <mat-progress-bar mode="indeterminate" *ngIf="isLoading"></mat-progress-bar>
+  
+    <nav class="navbar navbar-expand navbar-light bg-primary mb-3">
+      <div class="container-fluid">
+        <span class="navbar-brand text-white">User List</span>
+        <div class="d-flex ms-auto">
+          <input class="form-control me-2" type="search" placeholder="Search by ID" aria-label="Search" [(ngModel)]="searchId" (keyup)="searchUser()">
+          <button class="btn btn-outline-light" type="button" (click)="resetSearch()">Reset</button>
+        </div>
+      </div>
+    </nav>
+  </div>
+  
+ 
+      
+</main>
+
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content above * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * End of Placeholder  * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+
+<router-outlet></router-outlet>
